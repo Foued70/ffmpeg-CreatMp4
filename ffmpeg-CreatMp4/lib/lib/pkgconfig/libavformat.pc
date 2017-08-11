@@ -1,0 +1,14 @@
+prefix=/mnt/d/SVN/CTI_MEA1.0/Trunk/Development/Source/client/video-lib/build/linux
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.56.100
+Requires: libavcodec >= 57.64.101, libavutil >= 55.34.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lx264 -lmp3lame -lfdk-aac -lm -pthread
+Libs.private: 
+Cflags: -I${includedir}

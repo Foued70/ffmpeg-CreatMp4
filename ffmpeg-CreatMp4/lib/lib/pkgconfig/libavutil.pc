@@ -1,0 +1,14 @@
+prefix=/mnt/d/SVN/CTI_MEA1.0/Trunk/Development/Source/client/video-lib/build/linux
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.34.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

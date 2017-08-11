@@ -1,0 +1,14 @@
+prefix=/mnt/d/SVN/CTI_MEA1.0/Trunk/Development/Source/client/video-lib/build/linux
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.65.100
+Requires: libavutil >= 55.34.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -lx264 -lmp3lame -lfdk-aac -lm -pthread
+Libs.private: 
+Cflags: -I${includedir}
